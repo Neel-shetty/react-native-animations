@@ -7,7 +7,6 @@ export default function App() {
     <>
       <Navigator />
       <StatusBar style="auto" />
-      {/* <Text>test</Text> */}
     </>
   );
 }

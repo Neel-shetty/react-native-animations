@@ -11,19 +11,23 @@ declare global {
 
 export type RootNativeStackParamList = {
   HomeScreen: undefined;
+  SpotifyScreen: undefined;
 };
 
 export type Props = NativeStackScreenProps<
   RootNativeStackParamList,
-  "HomeScreen"
+  "HomeScreen",
+  "SpotifyScreen"
 >;
 
-export type HomeScreenNavigationProp = NativeStackNavigationProp<
-  RootNativeStackParamList,
-  "HomeScreen"
->;
+// export type HomeScreenNavigationProp = NativeStackNavigationProp<
+//   RootNativeStackParamList,
+//   "HomeScreen"
+// >;
 
-export type HomeScreenRouteProp = Props["navigation"];
+export type HomeScreenNavigationProp = Props["navigation"];
+
+export type HomeScreenRouteProp = Props["route"];
 
 export type RootNativeStackScreenProps<
   Screen extends keyof RootNativeStackParamList
