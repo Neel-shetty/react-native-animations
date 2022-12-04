@@ -13,6 +13,7 @@ export type RootNativeStackParamList = {
   HomeScreen: undefined;
   SpotifyScreen: undefined;
   HeadspaceScreen: undefined;
+  TestScreen: undefined;
 };
 
 export type Props = NativeStackScreenProps<

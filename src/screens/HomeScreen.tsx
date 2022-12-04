@@ -28,6 +28,11 @@ const HomeScreen = ({ navigation }: Props) => {
           <Text style={styles.title}>Headspace Play Animation</Text>
         </View>
       </TouchableOpacity>
+      <TouchableOpacity onPress={HeadspaceScreenButton}>
+        <View style={styles.itemContainer}>
+          <Text style={styles.title}>Test Screen</Text>
+        </View>
+      </TouchableOpacity>
     </ScrollView>
   );
 };

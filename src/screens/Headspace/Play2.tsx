@@ -61,18 +61,18 @@ interface Play2Props {
 }
 
 export const Play = ({ progress }: Play2Props) => {
-  const paint = usePaintRef();
+  // const paint = usePaintRef();
 
   const path = useComputedValue(() => {
     const p = pause.interpolate(play, progress.current)!;
     p.simplify();
     return p;
   }, [progress]);
-  const transform = useComputedValue(() => {
-    const h = r * 2;
-    const centroid = h / 2 - h / 3;
-    return [{ translateX: mix(progress.current, centroid, 0) }];
-  }, [progress]);
+  // const transform = useComputedValue(() => {
+  //   const h = r * 2;
+  //   const centroid = h / 2 - h / 3;
+  //   return [{ translateX: mix(progress.current, centroid, 0) }];
+  // }, [progress]);
   return (
     <>
       <Paint ref={paint}>
