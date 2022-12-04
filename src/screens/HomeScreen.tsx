@@ -13,11 +13,19 @@ const HomeScreen = ({ navigation }: Props) => {
   function SpotifyScreenButton() {
     navigation.navigate("SpotifyScreen");
   }
+  function HeadspaceScreenButton() {
+    navigation.navigate("HeadspaceScreen");
+  }
   return (
     <ScrollView contentContainerStyle={styles.root}>
       <TouchableOpacity onPress={SpotifyScreenButton}>
         <View style={styles.itemContainer}>
           <Text style={styles.title}>Spotify Header Animation</Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={HeadspaceScreenButton}>
+        <View style={styles.itemContainer}>
+          <Text style={styles.title}>Headspace Play Animation</Text>
         </View>
       </TouchableOpacity>
     </ScrollView>

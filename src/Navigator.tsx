@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./screens/HomeScreen";
 import { RootNativeStackParamList } from "../types";
 import SpotifyScreen from "./screens/SpotifyHeader/SpotifyScreen";
+import HeadspaceScreen from "./screens/Headspace/HeadspaceScreen";
 
 const Stack = createNativeStackNavigator<RootNativeStackParamList>();
 
@@ -22,6 +23,7 @@ const Navigator = () => {
           component={SpotifyScreen}
           options={{ headerShown: false }}
         />
+        <Stack.Screen name="HeadspaceScreen" component={HeadspaceScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -12,12 +12,14 @@ declare global {
 export type RootNativeStackParamList = {
   HomeScreen: undefined;
   SpotifyScreen: undefined;
+  HeadspaceScreen: undefined;
 };
 
 export type Props = NativeStackScreenProps<
-  RootNativeStackParamList,
-  "HomeScreen",
-  "SpotifyScreen"
+  RootNativeStackParamList
+  // "HomeScreen",
+  // "SpotifyScreen",
+  // "HeadspaceScreen"
 >;
 
 // export type HomeScreenNavigationProp = NativeStackNavigationProp<
