@@ -25,7 +25,11 @@ const Navigator = () => {
           options={{ headerShown: false }}
         />
         <Stack.Screen name="HeadspaceScreen" component={HeadspaceScreen} />
-        <Stack.Screen name="TestScreen" component={TestScreen} />
+        <Stack.Screen
+          name="TestScreen"
+          component={TestScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

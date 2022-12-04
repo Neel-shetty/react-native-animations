@@ -16,6 +16,9 @@ const HomeScreen = ({ navigation }: Props) => {
   function HeadspaceScreenButton() {
     navigation.navigate("HeadspaceScreen");
   }
+  function TestScreenButton() {
+    navigation.navigate("TestScreen");
+  }
   return (
     <ScrollView contentContainerStyle={styles.root}>
       <TouchableOpacity onPress={SpotifyScreenButton}>
@@ -28,7 +31,7 @@ const HomeScreen = ({ navigation }: Props) => {
           <Text style={styles.title}>Headspace Play Animation</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity onPress={HeadspaceScreenButton}>
+      <TouchableOpacity onPress={TestScreenButton}>
         <View style={styles.itemContainer}>
           <Text style={styles.title}>Test Screen</Text>
         </View>
