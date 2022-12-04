@@ -7,29 +7,23 @@ import { RootNativeStackParamList } from "../types";
 import SpotifyScreen from "./screens/SpotifyHeader/SpotifyScreen";
 import HeadspaceScreen from "./screens/Headspace/HeadspaceScreen";
 import TestScreen from "./screens/TestScreen";
+import { Tarot } from "./screens/Tarot";
 
 const Stack = createNativeStackNavigator<RootNativeStackParamList>();
 
 const Navigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
-          options={{ title: "Your Animations" }}
+          options={{ title: "Your Animations", headerShown: true }}
         />
-        <Stack.Screen
-          name="SpotifyScreen"
-          component={SpotifyScreen}
-          options={{ headerShown: false }}
-        />
+        <Stack.Screen name="SpotifyScreen" component={SpotifyScreen} />
         <Stack.Screen name="HeadspaceScreen" component={HeadspaceScreen} />
-        <Stack.Screen
-          name="TestScreen"
-          component={TestScreen}
-          options={{ headerShown: false }}
-        />
+        <Stack.Screen name="TestScreen" component={TestScreen} />
+        <Stack.Screen name="Tarot" component={Tarot}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

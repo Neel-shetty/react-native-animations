@@ -19,6 +19,9 @@ const HomeScreen = ({ navigation }: Props) => {
   function TestScreenButton() {
     navigation.navigate("TestScreen");
   }
+  function TarotScreenButton() {
+    navigation.navigate("Tarot");
+  }
   return (
     <ScrollView contentContainerStyle={styles.root}>
       <TouchableOpacity onPress={SpotifyScreenButton}>
@@ -34,6 +37,11 @@ const HomeScreen = ({ navigation }: Props) => {
       <TouchableOpacity onPress={TestScreenButton}>
         <View style={styles.itemContainer}>
           <Text style={styles.title}>Test Screen</Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={TarotScreenButton}>
+        <View style={styles.itemContainer}>
+          <Text style={styles.title}>TarotCard Screen</Text>
         </View>
       </TouchableOpacity>
     </ScrollView>
